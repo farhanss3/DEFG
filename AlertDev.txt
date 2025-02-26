@@ -1,6 +1,3 @@
-Here’s a detailed breakdown of the three functional groups within the Alert Development team, including their responsibilities, objectives, and key considerations:  
-
----
 
 ### **1. Intake Review Team**  
 **Purpose:**  
