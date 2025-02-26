@@ -1,0 +1,69 @@
+Here’s a detailed breakdown of the three functional groups within the Alert Development team, including their responsibilities, objectives, and key considerations:  
+
+---
+
+### **1. Intake Review Team**  
+**Purpose:**  
+The Intake Review Team acts as the front line for all detection requests, ensuring that only well-defined, high-priority use cases move forward in the alert development lifecycle. They manage intake, prioritization, and initial triage to streamline detection engineering efforts.  
+
+**Key Responsibilities:**  
+- **Intake Management:** Receive detection requests from internal teams (e.g., threat intelligence, SOC, IR, red teams).  
+- **Prioritization & Triage:** Assess and categorize incoming requests based on business impact, threat severity, and urgency.  
+- **Threat Context Application:** Work with intelligence teams to enrich requests with TTPs, MITRE ATT&CK mapping, and historical attack data.  
+- **Scope & Feasibility Analysis:** Ensure that detection requests have clear objectives, sufficient telemetry, and viable detection logic before proceeding.  
+- **Automation & Workflow Optimization:** Leverage automation tools to streamline request tracking and initial triage efforts.  
+- **Stakeholder Communication:** Serve as the primary contact for detection requests, providing status updates and gathering necessary details from requesters.  
+
+**Success Metrics:**  
+- Percentage of requests properly triaged within SLAs.  
+- Reduction in false positives due to improved context application.  
+- Percentage of requests rejected due to lack of feasibility or telemetry gaps.  
+
+---
+
+### **2. Detection Engineering Team**  
+**Purpose:**  
+The Detection Engineering Team is responsible for the core development of detections, ensuring high-quality, high-fidelity alerts that accurately detect threats while minimizing false positives.  
+
+**Key Responsibilities:**  
+- **Sigma Rule Development:** Create new detections based on incoming use cases, ensuring alignment with best practices and ATT&CK coverage.  
+- **SQL Query Conversion & Retro Hunting:** Convert sigma rules into SQL queries for retroactive investigations and validation.  
+- **Fidelity Scoring & Testing:** Assign fidelity scores based on historical data, testing results, and feedback from SOC teams.  
+- **Threat Simulation & Validation:** Utilize adversary emulation and red team feedback to test and fine-tune detection logic.  
+- **Documentation & Standardization:** Maintain clear documentation for each detection, ensuring it aligns with the Cyber Detection Library’s requirements.  
+- **Collaboration with Other Teams:** Work closely with threat intelligence, SOC, and IR teams to refine detection logic based on emerging threats and real-world attack data.  
+
+**Success Metrics:**  
+- Number of detections developed and deployed per month.  
+- Fidelity score improvements over time.  
+- Number of detections validated against real-world attack scenarios.  
+- Reduction in detection development cycle time.  
+
+---
+
+### **3. Alert Update Team**  
+**Purpose:**  
+The Alert Update Team ensures that existing detections remain effective by refining, updating, and deprecating alerts based on performance data, feedback, and evolving threats.  
+
+**Key Responsibilities:**  
+- **Alert Tuning & Optimization:** Modify existing detections to reduce false positives and improve fidelity.  
+- **Deprecation & Cleanup:** Retire outdated or redundant alerts to maintain efficiency in the detection library.  
+- **Performance Monitoring & Feedback Loop:** Analyze alert performance using SOC feedback and detection metrics.  
+- **Threat Adaptation:** Update detections based on new TTPs, emerging threats, and environmental changes.  
+- **Detection Correlation & Enhancements:** Improve alert logic by correlating detections with additional data sources for context enrichment.  
+- **Stakeholder Engagement:** Work with SOC analysts and detection engineers to ensure alert updates align with operational needs.  
+
+**Success Metrics:**  
+- Reduction in false positives and false negatives.  
+- Number of alerts successfully updated and optimized.  
+- Mean time to update (MTTU) an alert based on feedback.  
+- Number of deprecated alerts to reduce noise and redundancy.  
+
+---
+
+### **Additional Considerations:**  
+- **Cross-Training & Rotation:** Consider rotating team members between functions periodically to prevent burnout and improve skill diversity.  
+- **SLA & Workflow Automation:** Implement automation for triage, tracking, and validation processes to ensure efficient workflows.  
+- **Collaboration & Feedback Loop:** Ensure all teams have a continuous feedback mechanism with SOC, IR, and threat intelligence teams to refine detections based on real-world effectiveness.  
+
+Would you like help designing a process flow diagram or defining KPIs/SLAs in more detail?
